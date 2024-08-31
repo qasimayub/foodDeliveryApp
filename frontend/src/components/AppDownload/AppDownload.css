@@ -1,0 +1,27 @@
+.app-download {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px auto;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.app-download-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.app-download h1{
+    color: #262626;
+    font-weight: 500;
+    text-align: center;
+}
+.app-download-icon img {
+    width: 150px;
+    transition: 0.2s;
+}
+.app-download-icon img:hover {
+    transform: scale(1.05);
+}
