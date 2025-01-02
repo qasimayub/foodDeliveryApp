@@ -14,13 +14,11 @@ const Header = () => {
     setPosition([mouseY,mouseX,true])
   }
   const handleLeave = (evt) => {
-    console.log('leave')
     setPosition([0,0,false])
   }
 
   return (
     <div onMouseMove={handleHover} onMouseOut={handleLeave} className='header' ref={headerRef}>
-      <Cursor top={position[0]} left={position[1]} visible={position[2]}/>
         <div className="header-contents">
             <h2>Order your favourite food here</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem eum reprehenderit repellat dolorum in alias harum illum ducimus quibusdam facilis laborum earum nihil, assumenda quam sit voluptas, placeat explicabo?</p>

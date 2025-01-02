@@ -1,0 +1,54 @@
+.list {
+    padding: 50px 60px;
+    width: 100%;
+}
+
+.list h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.list-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.5fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.description {
+    text-align: left;
+}
+
+.list-item img {
+    width: 50px;
+}
+
+.cross {
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .list-grid {
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    }
+    .description-category {
+        display: none
+    }
+}
+
+@media (max-width:450px) {
+    .price {
+        display: none;
+    }
+    .list-grid {
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+    .list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

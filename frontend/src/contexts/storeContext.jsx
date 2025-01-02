@@ -35,10 +35,10 @@ const StoreContextProvider = (props) => {
         { headers: { token } }
       );
     }
-    if (!cartItems[itemId]) {
-      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
-    } else {
+    if (itemId in cartItems) {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
     }
   };
 
